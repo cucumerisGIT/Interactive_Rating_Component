@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+
+      <!-- Rating Card -->
+      <form id="rating-card" class="card">
+        <img class="card__rating-icon" src="images/icon-star.svg" alt="" role="presentation">
+        <h1 class="card__title">How did we do?</h1>
+        <fieldset class="card__rating-fieldset">
+          <legend hidden>Rating options</legend>
+          <p class="card__text">
+            Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!
+          </p>
+          <div class="card__rating-wrapper">
+            <input class="card__rating" id="rating-1" type="radio" name="rating" value="1" required aria-required="true"><label class="card__rating-label" for="rating-1">1</label>
+            <input class="card__rating" id="rating-2" type="radio" name="rating" value="2" required aria-required="true"><label class="card__rating-label" for="rating-2">2</label>
+            <input class="card__rating" id="rating-3" type="radio" name="rating" value="3" required aria-required="true"><label class="card__rating-label" for="rating-3">3</label>
+            <input class="card__rating" id="rating-4" type="radio" name="rating" value="4" required aria-required="true"><label class="card__rating-label" for="rating-4">4</label>
+            <input class="card__rating" id="rating-5" type="radio" name="rating" value="5" required aria-required="true"><label class="card__rating-label" for="rating-5">5</label>
+          </div>
+        </fieldset>
+        <button id="card-submit" class="card__submit" type="submit">Submit</button>
+      </form>
+
+      <!-- Thank-You Card -->
+      <div id="thx-card" class="card card--flex-centered" hidden>
+        <span>
+          <img class="card__thx-image" src="images/illustration-thank-you.svg" alt="" role="presentation">
+          <p id="card-selected-rating" class="card__selected-rating"></p>
+        </span>
+        <h2 class="card__title">Thank you!</h2>
+        <p class="card__text">
+          We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">cucumeris</a>.
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
