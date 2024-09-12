@@ -90,7 +90,9 @@ html {
 
     &__rating {
         position: absolute;
-        opacity: 0;
+        left: -9999px;
+        // z-index: -100;
+        // opacity: 0;
     }
 
     &__rating-label {
@@ -174,7 +176,7 @@ html {
     max-width: 0;
 }
 
-@media (min-width: 1000px) {
+@media (hover: hover) {
     .card {
         &__rating-label:hover {
             background-color: $white;

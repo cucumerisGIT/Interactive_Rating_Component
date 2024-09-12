@@ -4,7 +4,7 @@ const thxCard: HTMLDivElement = document.getElementById('thx-card') as HTMLDivEl
 // Handle the click event of the radios within the form
 document.querySelectorAll('.card__rating').forEach(
     rating => rating.addEventListener('click', (e) => {
-        const selectedRating = e.currentTarget as HTMLInputElement;//document.querySelector('.card__rating:checked') as HTMLInputElement;
+        const selectedRating = e.currentTarget as HTMLInputElement;
     
         // Remove the 'active' modifier from the currently active element, if any
         document.querySelector('.card__rating-label--active')?.classList.remove('card__rating-label--active');
@@ -16,7 +16,7 @@ document.querySelectorAll('.card__rating').forEach(
 );
 
 form?.addEventListener('submit', (e) => {
-    e.preventDefault();
+    // e.preventDefault();
 
     // Get the rating of the user
     const userRating = new FormData(form).get('rating');
